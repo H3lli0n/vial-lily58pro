@@ -11,8 +11,8 @@ Firmware based on Vial 0.7.1 with fixes and features from other Vial branches
 I kept original folder hierarchy so you have to add the glcdfont.c and replace existing layer_state_reader.c
 
 Build and flash EE_HAND firmware :
--> make lily58/rev1:bongovial:uf2-split-left
--> make lily58/rev1:bongovial:uf2-split-right
+- make lily58/rev1:bongovial:uf2-split-left
+- make lily58/rev1:bongovial:uf2-split-right
 
 Possible issue :
 - When you power the computer on it might not detect the keyboard, just unplug and plug
