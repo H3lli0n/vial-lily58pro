@@ -181,9 +181,10 @@ void render_rp2040(void) {
 }
 
 void render_wpm(void) {
+	oled_set_cursor(2, 3);
     oled_write(get_u8_str(get_current_wpm(), '0'), false);
-	oled_set_cursor(0, 4);
-    oled_write_P(PSTR("  WPM"), false);
+	oled_set_cursor(2, 4);
+    oled_write_P(PSTR("WPM"), false);
 }
 
 void render_mod_status_gui_alt(uint8_t modifiers) {
@@ -569,9 +570,9 @@ bool oled_task_user(void) {
 		render_logo();
 		oled_set_cursor(0, 3);
 		render_wpm();
-		oled_set_cursor(0, 8);
+		oled_set_cursor(0, 6);
         render_layer_state();
-        oled_set_cursor(0, 13);
+        oled_set_cursor(0, 11);
         render_mod_status_gui_alt(get_mods()|get_oneshot_mods());
         render_mod_status_ctrl_shift(get_mods()|get_oneshot_mods());
     } else {
