@@ -569,7 +569,7 @@ bool oled_task_user(void) {
         oled_set_cursor(0, 0);
 		render_logo();
 		oled_set_cursor(0, 3);
-		render_wpm();
+		render_rp2040();
 		oled_set_cursor(0, 6);
         render_layer_state();
         oled_set_cursor(0, 11);
@@ -579,9 +579,9 @@ bool oled_task_user(void) {
 		#ifdef LUNA_PET
 			oled_set_cursor(0, 0);
 			render_logo();
-			oled_set_cursor(0, 3);
-			render_rp2040();
-			render_luna(0, 13);
+			oled_set_cursor(0, 6);
+			render_wpm();
+			render_luna(0, 11);
 		#else
 			render_bongo();
 		#endif
