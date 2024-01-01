@@ -4,7 +4,6 @@ VIAL_ENABLE = yes
 OLED_ENABLE = yes
 WPM_ENABLE = yes
 
-MOUSEKEY_ENABLE = no
 EXTRAKEY_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 COMBO_ENABLE = yes
@@ -13,12 +12,19 @@ LTO_ENABLE = yes
 
 GRAVE_ESC_ENABLE = no
 MAGIC_ENABLE = no
-BOOTMAGIC_ENABLE = no
 KEY_OVERRIDE_ENABLE = no
-COMMAND_ENABLE = no
-CONSOLE_ENABLE = no
-SWAP_HANDS_ENABLE = no
-RGBLIGHT_ENABLE = no
+
+BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
+MOUSEKEY_ENABLE = no        # Mouse keys(+4700)
+CONSOLE_ENABLE = no         # Console for debug(+400)
+COMMAND_ENABLE = no         # Commands for debug and configuration
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
+MIDI_ENABLE = no            # MIDI controls
+AUDIO_ENABLE = no           # Audio output on port C6
+UNICODE_ENABLE = no         # Unicode
+BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
+RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
+SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 
 BOOTLOADER = rp2040
 CONVERT_TO = promicro_rp2040
@@ -27,7 +33,7 @@ CONVERT_TO = promicro_rp2040
 SRC +=  ./lib/rgb_state_reader.c \
         ./lib/layer_state_reader.c \
         ./lib/logo_reader.c \
-        ./lib/keylogger.c \
+        #./lib/keylogger.c \
         # ./lib/mode_icon_reader.c \
         # ./lib/host_led_state_reader.c \
         # ./lib/timelogger.c \
