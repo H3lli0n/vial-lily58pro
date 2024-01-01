@@ -1,5 +1,5 @@
 # Lily58Pro-Vial-Bongocat
-Firmware for Lily58 under VIAL with Bongocat animation and features
+Firmware for Lily58 under VIAL with animation and features
 
 Firmware based on Vial 0.7.1 with fixes and features from other Vial branches
 - splitkb for clean code of left features
@@ -14,5 +14,9 @@ Firmware based on Vial 0.7.1 with fixes and features from other Vial branches
 I kept original folder hierarchy so you have to add the glcdfont.c and replace existing layer_state_reader.c
 
 Build and flash EE_HAND firmware :
-- make lily58/rev1:bongovial:uf2-split-left
-- make lily58/rev1:bongovial:uf2-split-right
+- You first need to have set a VIAL local Git repository
+- Then you copy paste my content into it and replace files
+- Make sure you didn't forget to run : qmk make git-submodules
+- Once set you can run compilation and flash process :
+ - make lily58/rev1:bongovial:uf2-split-left
+ - make lily58/rev1:bongovial:uf2-split-right
