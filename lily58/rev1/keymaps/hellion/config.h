@@ -34,39 +34,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef LOCKING_RESYNC_ENABLE
 
 /* Select hand configuration */
-// #define MASTER_LEFT
-// #define MASTER_RIGHT
 #define EE_HANDS 
 
-//#define SPLIT_USB_DETECT
-//#define SPLIT_USB_TIMEOUT 5000
-//#define SPLIT_USB_TIMEOUT_POLL 50
 #define SPLIT_WATCHDOG_ENABLE
 #define SPLIT_WATCHDOG_TIMEOUT 20000
 
+/* Luna Pet by helltm */
+/* Glcdfont for layers state */
 #ifdef OLED_ENABLE
+#    undef OLED_FONT_H
+#    define OLED_FONT_H "keyboards/lily58/rev1/keymaps/hellion/glcdfont.c"
 #    define SPLIT_OLED_ENABLE
 #    define OLED_TIMEOUT 300000
 #    define OLED_UPDATE_INTERVAL 10
+#    define ANIM_SIZE 96
+#    define MIN_WALK_SPEED      10
+#    define MIN_RUN_SPEED       40
+#    define ANIM_FRAME_DURATION 200
 #endif
 
 #ifdef WPM_ENABLE
 #    define SPLIT_WPM_ENABLE
 #endif
-
-#define ANIM_FRAME_DURATION 200
-#define LUNA_PET
-
-/* Luna Pet by helltm */
-#ifdef LUNA_PET
-#    define ANIM_SIZE 96
-#    define MIN_WALK_SPEED      10
-#    define MIN_RUN_SPEED       40
-#else
-#    define ANIM_SIZE 512
-#    define IDLE_FRAMES 5
-#    define IDLE_SPEED 30
-#    define TAP_FRAMES 2
-#    define TAP_SPEED 40
-#endif
-
