@@ -14,6 +14,7 @@ GRAVE_ESC_ENABLE = no
 MAGIC_ENABLE = no
 KEY_OVERRIDE_ENABLE = no
 
+OS_DETECTION_ENABLE = yes   # Detect OS
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys(+4700)
 CONSOLE_ENABLE = no         # Console for debug(+400)
