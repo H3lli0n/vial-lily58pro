@@ -8,6 +8,7 @@ Firmware based on Vial 0.7.x with fixes and features from other Vial branches
 - Fix USB detection with watchdog
 - Made with EE_HAND so you have to compile left and right and then you can plug usb on any side
 - Made for promicro_rp2040 so no external parameter to add
+- OS logo is made with os_detection.h from QMK : Windows, Mac, Linux (someone reported only works on left usb connected)
 
 Build and flash EE_HAND firmware :
 - You first need to have set a VIAL local Git repository
